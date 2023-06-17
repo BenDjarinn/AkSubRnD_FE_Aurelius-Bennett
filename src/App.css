@@ -14,19 +14,57 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fefefe;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 25px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.Header {
+  font-size: 45px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #012e3a;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15.5px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+}
+
+.form-control {
+  height: 40px;
+  width: 500px;
+}
+
+.label {
+  text-align: left;
+}
+
+.button {
+  height: 40px;
+  width: 500px;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #1a1af4;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
