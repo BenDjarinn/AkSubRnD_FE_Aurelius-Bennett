@@ -46,17 +46,7 @@ function App() {
       return false
     }
 
-    if(isUpdate.status) {
-      data.forEach((contact) => {
-        if(contact.id === isUpdate.id) {
-          contact.name = formData.name;
-          contact.telp = formData.telp;
-        }
-
-      });
-    }else {
-      data.push({id: uid(), name: formData.name, telp: formData.telp});
-    }
+    
 
     
 
@@ -65,13 +55,6 @@ function App() {
 
     data.push({id: uid(), name: formData.name, telp: formData.telp});
     setContacts(data);
-  }
-
-  let data = [...contacts]
-  let foundData = data.find((contact) => contact.id === id);
-
-  function handleEdit(id) {
-
   }
 
   return (
